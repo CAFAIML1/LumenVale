@@ -1,0 +1,19 @@
+name: Пропозиція
+description: Покращення графіки, швидкодії чи сумісності
+title: '[Feature] '
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Що пропонуєш і яку проблему це розв’язує?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Версії та обладнання
+      description: Для сумісності вкажи Minecraft, Iris, Sodium і Fabric Loader. Для швидкодії — відеокарту, роздільність і профіль.
+  - type: textarea
+    id: reference
+    attributes:
+      label: Приклади або очікуваний вигляд

@@ -4,9 +4,13 @@
 
 ### Кольорове світло. Жива вода. Атмосферні світи.
 
+[![Перевірки](https://github.com/CAFAIML1/LumenVale/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/CAFAIML1/LumenVale/actions/workflows/validate.yml)
+[![Версія 2.5.0 experimental](https://img.shields.io/badge/version-2.5.0%20experimental-3b887a)](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.5.0)
+[![Ліцензія MIT](https://img.shields.io/badge/license-MIT-74889a)](LICENSE.txt)
+
 **Minecraft Java 1.20.1 · Iris 1.6.x / 1.7.x · OpenGL 4.3**
 
-**[Завантажити 2.5.0](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)** · **[Інструкція](README_UA.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
+**[Завантажити 2.5.0](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.5.0)** · **[Встановлення](#встановлення)** · **[Сумісність](docs/COMPATIBILITY.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
 
 </div>
 
@@ -23,6 +27,8 @@ LumenVale поєднує виразне освітлення з чотирма �
 - **Вода з глибиною.** Хвилі, заломлення, поглинання світла, відбиття видимого оточення, дощові кола, піна та світлові візерунки на дні залежно від профілю.
 - **Атмосфера й камера.** М’які тіні, процедурне небо, об’ємне світло, світіння яскравих ділянок, плівковий колір і необов’язкова глибина різкості.
 - **Українські й англійські налаштування.** Освітлення працює також у Незері та Енді.
+
+**Навігація:** [Профілі](#профілі) · [Результати перевірок](docs/VALIDATION.md) · [Повна інструкція](README_UA.md) · [Розробка](#розробка)
 
 ## Встановлення
 
@@ -63,9 +69,10 @@ LumenVale поєднує виразне освітлення з чотирма �
 
 ```sh
 python scripts/build.py
+python scripts/check_repository.py
 ```
 
-Готовий пакет з’явиться в dist/. Скрипт перевіряє структуру пакета й посилання на включені файли; компіляція GLSL та тест у Minecraft виконуються окремо. [Як долучитися →](CONTRIBUTING.md)
+Готовий пакет з’явиться в dist/. GitHub Actions додатково компілює профілі та виміри, запускає оригінальні парсери дев’яти Iris і перевіряє ZIP та контрольні суми. Ігрові тести виконуються окремо. [Команди перевірки та правила внеску →](CONTRIBUTING.md)
 
 ## English
 

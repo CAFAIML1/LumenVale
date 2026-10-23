@@ -14,7 +14,7 @@ args=parser.parse_args()
 if not args.glslang:parser.error('Pass --glslang /path/to/glslangValidator')
 W=Path(__file__).resolve().parents[1]
 S=W/'shaders'
-COMPILER=Path(args.glslang).resolve()
+COMPILER=Path(shutil.which(args.glslang) or args.glslang).resolve()
 TEST=args.output.resolve()
 TEST.mkdir(parents=True,exist_ok=True)
 PROFILES = load_profiles(S)

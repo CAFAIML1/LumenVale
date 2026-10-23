@@ -1,4 +1,4 @@
-* text=auto
+* text=auto eol=lf
 *.glsl text eol=lf
 *.vsh text eol=lf
 *.fsh text eol=lf

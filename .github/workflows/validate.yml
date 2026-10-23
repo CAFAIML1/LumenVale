@@ -1,0 +1,54 @@
+name: Validate shader pack
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: GLSL, Iris parsers and distribution
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Set up Java
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install GLSL compiler
+        run: sudo apt-get update && sudo apt-get install --yes glslang-tools
+      - name: Compile all profiles and dimensions
+        run: python scripts/validate.py
+      - name: Check the original Iris parsers
+        run: python scripts/check_compatibility.py --glslang glslangValidator
+      - name: Build installable shader ZIP
+        run: python scripts/build.py
+      - name: Verify links, release files and checksums
+        run: python scripts/check_repository.py
+      - name: Upload shader ZIP and validation reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lumenvale-validation-${{ github.sha }}
+          path: |
+            dist/
+            .validation/glsl/result.json
+            .validation/iris/result.json
+          if-no-files-found: warn
+          retention-days: 7

@@ -35,6 +35,8 @@ uniform int heldBlockLightValue2;
 uniform int heldItemId;
 uniform int heldItemId2;
 uniform int currentRenderedItemId;
+#ifdef IRIS_FEATURE_BLOCK_EMISSION_ATTRIBUTE
 uniform bool isRightHanded;
+#endif
 uniform ivec2 eyeBrightnessSmooth;
 #endif

@@ -1,3 +1,7 @@
 * text=auto
+*.glsl text eol=lf
+*.vsh text eol=lf
+*.fsh text eol=lf
+*.csh text eol=lf
 *.bin binary
 *.zip binary

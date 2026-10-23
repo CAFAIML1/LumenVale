@@ -53,7 +53,16 @@ vec3 oneHandLight(int item,int reported,float side,vec3 scenePos,vec3 normal) {
     return spectrum*(2.2*falloff*diffuse)*transmission;
 }
 vec3 handheldLight(vec3 scenePos,vec3 normal) {
+#ifdef IRIS_FEATURE_BLOCK_EMISSION_ATTRIBUTE
     float mainSide=isRightHanded?1.0:-1.0;
+#else
+    // Older Iris does not expose the player handedness uniform.
+#ifdef LEGACY_LEFT_HAND
+    float mainSide=-1.0;
+#else
+    float mainSide=1.0;
+#endif
+#endif
     return oneHandLight(heldItemId,heldBlockLightValue,mainSide,scenePos,normal)
           +oneHandLight(heldItemId2,heldBlockLightValue2,-mainSide,scenePos,normal);
 }

@@ -1,0 +1,293 @@
+{
+  "releases": [
+    {
+      "iris": "1.6.4+1.20",
+      "namespace": "net.coderbot.iris",
+      "minecraft": null,
+      "fabricloader": ">=0.12.3",
+      "sodium": null,
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS"
+      ],
+      "full_voxel_candidate": false,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": false
+      },
+      "sha512": "8ec8e79543367c6a34f3686063ce1fd73fb0fd2fa25b8ac575fa941ecd8d65df9634649fcdb602791c7ce2ea47f098937ab4e7e323787f2815eac74e736741ba",
+      "metadata_url": "https://api.modrinth.com/v2/version/URWeWMAt",
+      "release_url": "https://modrinth.com/mod/iris/version/URWeWMAt",
+      "filename": "iris-mc1.20-1.6.4.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "legacy fallback"
+    },
+    {
+      "iris": "1.6.17+1.20.1",
+      "namespace": "net.coderbot.iris",
+      "minecraft": [
+        "1.20.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.5.7",
+        "0.5.8",
+        "0.5.9"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING"
+      ],
+      "full_voxel_candidate": false,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": false
+      },
+      "sha512": "71fcb0cc6274b1991f8361ca0e6b3717428bef1c8cff73ef0420d1dd431d00736060b73105490f980e4fb3173c179140bda74e9f40460704e417558583c7bfb0",
+      "metadata_url": "https://api.modrinth.com/v2/version/JHbrO6Zq",
+      "release_url": "https://modrinth.com/mod/iris/version/JHbrO6Zq",
+      "filename": "iris-mc1.20.1-1.6.17.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "legacy fallback"
+    },
+    {
+      "iris": "1.7.0+1.20.1",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.20.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": "0.5.8",
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "b02919e950102b77eb9f2908f8afa8b77af4b21381faf7c32c1b8a2efda3ca95acd21c940fe617165c3670ecc091c4f5034934e02ddec592f29c2c6cf85560f8",
+      "metadata_url": "https://api.modrinth.com/v2/version/KHQ2Hnpt",
+      "release_url": "https://modrinth.com/mod/iris/version/KHQ2Hnpt",
+      "filename": "iris-1.7.0+mc1.20.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.7.2+1.20.1",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.20.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.5.10",
+        "0.5.11"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "bb8a8f1ab1b302bbe5d6c5f970d8e781089836fb5e669780cd05fcc5a23e93152ea16e18eead7aa87a7f9e5f7f0197f9de90ea83f7cdebffc2d9a9f6bc9dcad0",
+      "metadata_url": "https://api.modrinth.com/v2/version/1CMVXDHo",
+      "release_url": "https://modrinth.com/mod/iris/version/1CMVXDHo",
+      "filename": "iris-1.7.2+mc1.20.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.7.5+1.20.1",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.20.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.5.10",
+        "0.5.11"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "6bc2ab52aae576062d1f4673ee7b92a7fdc64717a8aa13e76cea574623badfef692037bfc6ef6e979e716d52cf15cf24c90694baf69a584f44e1b121550292a3",
+      "metadata_url": "https://api.modrinth.com/v2/version/Bi9nvICq",
+      "release_url": "https://modrinth.com/mod/iris/version/Bi9nvICq",
+      "filename": "iris-1.7.5+mc1.20.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.7.6+1.20.1",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.20.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.5.x"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "f1337b0441c31269bd3bfcb28647d521326a83e73128c1ac8d065615f8a5a4ca1e8c96a468b356584236ece5b164ec8d8a52b1878064f4e391ecf4f32885e301",
+      "metadata_url": "https://api.modrinth.com/v2/version/s5eFLITc",
+      "release_url": "https://modrinth.com/mod/iris/version/s5eFLITc",
+      "filename": "iris-1.7.6+mc1.20.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.8.0+1.21.1-fabric",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.21.x"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.6.x"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "9feafdd697118f9fb22be78857c7e4a4367bea93e63affe65da4795ad383de68653569d99d5839aa9db8d4d93589a30cb48f74a074db004ccc089a7b0b55a766",
+      "metadata_url": "https://api.modrinth.com/v2/version/MA2sKKaG",
+      "release_url": "https://modrinth.com/mod/iris/version/MA2sKKaG",
+      "filename": "iris-fabric-1.8.0+mc1.21.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.8.8+1.21.1-fabric",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.21.x"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.6.x"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "2e6ba2ffa1e1a6799288245a7e0ac68ee8df1d41b98362189df58f535cae34fa9277801e4136633467341b7dae5be0e5c698011b480b3d91b66d3dd4f7567aa6",
+      "metadata_url": "https://api.modrinth.com/v2/version/zsoi0dso",
+      "release_url": "https://modrinth.com/mod/iris/version/zsoi0dso",
+      "filename": "iris-fabric-1.8.8+mc1.21.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    },
+    {
+      "iris": "1.8.14-beta.1+1.21.1-fabric",
+      "namespace": "net.irisshaders.iris",
+      "minecraft": [
+        "1.21.1"
+      ],
+      "fabricloader": ">=0.12.3",
+      "sodium": [
+        "0.8.x"
+      ],
+      "java": null,
+      "available_voxel_flags": [
+        "CUSTOM_IMAGES",
+        "COMPUTE_SHADERS",
+        "REVERSED_CULLING",
+        "BLOCK_EMISSION_ATTRIBUTE"
+      ],
+      "full_voxel_candidate": true,
+      "uniforms": {
+        "heldItemId": true,
+        "heldItemId2": true,
+        "currentRenderedItemId": true,
+        "isRightHanded": true
+      },
+      "sha512": "a7fbb629793c52f0be8b049f787cb598879239b1ad8e1de62e103c8b9efff140e3232b93ef1f14e505d262897d8cf9505b1126396429ad4056bff969c8674e52",
+      "metadata_url": "https://api.modrinth.com/v2/version/bAo1Qhte",
+      "release_url": "https://modrinth.com/mod/iris/version/bAo1Qhte",
+      "filename": "iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+      "option_property_profile_resource_checks": 4,
+      "original_jcpp_sources_checked": 48,
+      "mode": "full Ultra"
+    }
+  ],
+  "original_property_option_profile_configurations": 36,
+  "original_jcpp_sources_checked": 432,
+  "unique_preprocessed_stages_compiled": 96,
+  "glsl_compilation": "passed",
+  "errors": 0,
+  "scope": "Official SHA512-verified Iris JARs. Original include graph, option scanner, profile/property/resource parsers and JCPP executed. Only game logging/debug-config hosts stubbed; no renderer, Fabric resolution, shader patcher, Minecraft launch or game FPS test."
+}

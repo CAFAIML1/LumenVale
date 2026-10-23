@@ -11,8 +11,8 @@ body:
   - type: input
     id: versions
     attributes:
-      label: Версії Minecraft, Iris та LumenVale
-      placeholder: Minecraft 1.20.1, Iris 1.7.6, LumenVale 2.4.0
+      label: Версії Minecraft, Iris, Sodium, Fabric Loader та LumenVale
+      placeholder: Minecraft 1.20.1, Iris 1.7.6, Sodium 0.5.11, Fabric Loader …, LumenVale 2.5.0
     validations:
       required: true
   - type: dropdown

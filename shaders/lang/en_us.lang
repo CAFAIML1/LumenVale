@@ -20,7 +20,6 @@ option.SURFACE_SSR_STEPS=Surface reflection steps
 option.CINEMATIC_GRADE=Cinematic color grading
 option.DEPTH_OF_FIELD=Depth of field / center focus
 option.DOF_STRENGTH=Depth-of-field strength
-option.VOXEL_LIGHTING.comment=64 cubed local volume, 12 direct and 8 indirect propagation passes in Ultra. Iris 1.7.6+ / OpenGL 4.3.
 option.DEPTH_OF_FIELD.comment=Focus follows the center of the screen smoothly. Disable for sharper gameplay.
 screen.LIGHTING=Lighting & shadows
 screen.ATMOSPHERE=Sky & atmosphere
@@ -69,3 +68,8 @@ option.WATER_REFRACTION.comment=Distorts the opaque scene behind water and rejec
 profile.comment=Performance minimizes passes. Balanced targets everyday play. High adds water scene reflections. Ultra adds voxel light, volumetrics, soft shadows and cinematic effects.
 option.BLOOM.comment=Uses two half-resolution passes; disabling skips both passes.
 option.FXAA.comment=Spatial antialiasing; may slightly soften fine texture details.
+
+option.LEGACY_LEFT_HAND=Left main hand (Iris 1.6.x)
+option.LEGACY_LEFT_HAND.comment=Enable for a left main hand on Iris 1.6.x. Iris 1.7+ detects it automatically.
+
+option.VOXEL_LIGHTING.comment=Requires four optional Iris capabilities. Iris 1.6.x automatically uses basic lighting even if Ultra shows this option enabled.

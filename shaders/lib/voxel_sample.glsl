@@ -37,11 +37,36 @@ vec4 voxelLightAt(vec3 scenePos,vec3 normal) {
     ivec3 sourceCell=ivec3(floor(p));
     uint sourceMaterial=texelFetch(voxelOccupancySampler,sourceCell,0).r;
     uint sourceShape=(sourceMaterial&LV_PARTIAL)!=0u?texelFetch(voxelShapeSampler,sourceCell,0).r:0u;
+    uint materials[8];
+    bool manualFilter=sourceShape!=0u;
+    float openWeight=0.0;
+    for(int i=0;i<8;i++) {
+        ivec3 corner=ivec3(i&1,(i>>1)&1,i>>2);
+        ivec3 cell=base+corner;
+        // fade > 0 guarantees 0.5 < p < 63.5, so all eight cells are inside.
+        uint occupancy=texelFetch(voxelOccupancySampler,cell,0).r;
+        materials[i]=occupancy;
+        manualFilter=manualFilter || (occupancy&LV_PARTIAL)!=0u
+            || (voxelFullCube(occupancy) && (occupancy&LV_EMITTER)!=0u);
+        vec3 weight=mix(1.0-fraction,fraction,vec3(corner));
+        float w=weight.x*weight.y*weight.z;
+        if(!voxelFullCube(occupancy)) openWeight+=w;
+    }
+    if(!manualFilter) {
+        // Full non-emitting solids store zero radiance. Hardware interpolation
+        // plus open-cell normalization replaces the manual air filter.
+        // Full emitters use the precise path to avoid cancellation artifacts.
+        vec3 light=texture3D(voxelLightSampler,p/64.0).rgb;
+#ifdef COLORED_LIGHT_BOUNCE
+        light+=texture3D(voxelLightBSampler,p/64.0).rgb;
+#endif
+        return vec4(max(light,vec3(0.0))/max(openWeight,0.00001)*VOXEL_STRENGTH,fade);
+    }
+    // Retain exact box/segment rejection around slabs, stairs and carpets.
     vec3 light=vec3(0.0);float total=0.0;
     for(int z=0;z<2;z++) for(int y=0;y<2;y++) for(int x=0;x<2;x++) {
         ivec3 cell=base+ivec3(x,y,z);
-        if(!voxelInside(cell)) continue;
-        uint occupancy=texelFetch(voxelOccupancySampler,cell,0).r;
+        uint occupancy=materials[x+y*2+z*4];
         if(voxelFullCube(occupancy)) continue;
         vec3 anchor=vec3(cell)+clamp(p-vec3(cell),vec3(0.04),vec3(0.96));
         if(sourceShape!=0u && shapeSegmentBlocked(sourceShape,p-vec3(sourceCell),anchor-vec3(sourceCell))) continue;

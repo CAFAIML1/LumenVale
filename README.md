@@ -4,13 +4,15 @@
 
 ### Кольорове світло. Жива вода. Атмосферні світи.
 
-**Minecraft Java 1.20.1 · Iris 1.7.6 · OpenGL 4.3**
+**Minecraft Java 1.20.1 · Iris 1.6.x / 1.7.x · OpenGL 4.3**
 
-**[Завантажити 2.4.0](https://github.com/CAFAIML1/LumenVale/raw/refs/heads/main/downloads/LumenVale-2.4.0-MC1.20.1.zip)** · **[Інструкція](README_UA.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
+**[Завантажити 2.5.0](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)** · **[Інструкція](README_UA.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
 
 </div>
 
 LumenVale поєднує виразне освітлення з чотирма профілями якості. Почни з **Balanced**, а для кольорового воксельного освітлення, об’ємного туману та відбиттів на блоках увімкни **Ultra**.
+
+**Нове у 2.5.0:** швидша вибірка воксельного світла, автоматичний спрощений режим для старіших Iris і матриця перевірок дев’яти випусків. [Режими та версії →](docs/COMPATIBILITY.md)
 
 ## Можливості
 
@@ -24,8 +26,8 @@ LumenVale поєднує виразне освітлення з чотирма �
 
 ## Встановлення
 
-1. Підготуй **Minecraft Java 1.20.1** з **Iris 1.7.6** та сумісною версією Sodium. Потрібна відеокарта з OpenGL 4.3.
-2. **[Завантаж LumenVale-2.4.0-MC1.20.1.zip](https://github.com/CAFAIML1/LumenVale/raw/refs/heads/main/downloads/LumenVale-2.4.0-MC1.20.1.zip)**.
+1. Підготуй **Minecraft Java 1.20.1** з **Iris 1.7.6** або іншою комбінацією з [матриці сумісності](docs/COMPATIBILITY.md), Fabric Loader та відповідним Sodium. Потрібна відеокарта з OpenGL 4.3.
+2. **[Завантаж LumenVale-2.5.0-MC1.20.1.zip](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)**.
 3. У меню Iris відкрий папку шейдерпаків і скопіюй туди ZIP **без розпакування**.
 4. Вибери LumenVale, натисни **«Застосувати»** й відкрий налаштування шейдера.
 5. Вибери профіль. Для повного кольорового освітлення — **Ultra**. Для чіткішого зображення під час гри можна вимкнути «Глибина різкості».
@@ -41,17 +43,17 @@ LumenVale поєднує виразне освітлення з чотирма �
 | **High** | 3072, 8 вибірок | 4 шари хвиль, 16 кроків відбиття | Дощові кола та каустика |
 | **Ultra** | 4096, 16 вибірок | 6 шарів хвиль, 40 кроків відбиття | Вокселі, кольорове відбите світло, туман і ефекти камери |
 
-Кольорове світло з рук доступне в усіх профілях. Його перевірка стін і скла потребує воксельного освітлення Ultra. Орієнтир під час розробки — RTX 4060 з 8 ГБ пам’яті.
+На Iris 1.6.x воксельні ефекти автоматично вимикаються. Кольорове світло з рук доступне в усіх профілях. Його перевірка стін і скла потребує воксельного освітлення Ultra. Орієнтир під час розробки — RTX 4060 з 8 ГБ пам’яті.
 
 ## Стан і межі
 
-Версія **2.4.0** є експериментальною. Пройдено перевірки компіляції та синтетичні тести на NVIDIA RTX 4060 Laptop GPU; вони не замінюють повний ігровий тест і не є бенчмарком Minecraft. [Що саме перевірено →](docs/VALIDATION.md)
+Версія **2.5.0** є експериментальною. Пройдено перевірки компіляції та синтетичні тести на NVIDIA RTX 4060 Laptop GPU; вони не замінюють повний ігровий тест і не є бенчмарком Minecraft. [Що саме перевірено →](docs/VALIDATION.md)
 
 - Локальна воксельна сітка охоплює приблизно ±32 блоки від камери. Це наближене освітлення, без апаратного RTX та повного трасування шляхів.
 - Поширення кольорового поля має комірку в один блок і оцінку отворів на гранях 4×4; світло з рук перевіряє об’єми підтримуваних форм точніше.
 - Опис неповних форм відповідає ванільним моделям 1.20.1. Модовані блоки й ресурс-паки, які змінюють геометрію, потребують окремої підтримки.
 - Екранні відбиття бачать лише вже намальовану непрозору сцену. Об’єкти поза кадром у них не відображаються.
-- PBR-карти ресурс-паків і Distant Horizons не інтегровані. Основна ціль сумісності — Iris 1.7.6 / Minecraft 1.20.1; новіші комбінації не перевірені.
+- PBR-карти ресурс-паків і Distant Horizons не інтегровані. Основна ціль — Minecraft 1.20.1. Iris 1.6.x має спрощений режим; для 1.7.x доступний повний Ultra. Перевірки парсерів 1.8.x не замінюють завершений перенос на Minecraft 1.21.x.
 
 ## Розробка
 
@@ -67,9 +69,9 @@ python scripts/build.py
 
 ## English
 
-LumenVale is an experimental shader pack targeting **Minecraft Java 1.20.1 and Iris 1.7.6**, with four quality profiles. Ultra adds local colored voxel lighting, one approximate diffuse bounce, stained-glass transmission, volumetric light and screen-space surface reflections. Both hands support independent source colors. Version 2.4.0 adds shape metadata for vanilla slabs, stairs, carpets and other partial blocks.
+LumenVale is an experimental shader pack targeting **Minecraft Java 1.20.1 with full Ultra on supported Iris 1.7.x and a capability fallback for older Iris 1.6.x**, with four quality profiles. Ultra adds local colored voxel lighting, one approximate diffuse bounce, stained-glass transmission, volumetric light and screen-space surface reflections. Both hands support independent source colors. Shape metadata covers vanilla slabs, stairs, carpets and other partial blocks. Version 2.5.0 adds faster light sampling and checks the original parsers from nine Iris releases, including 1.8.14 beta.1; a complete Minecraft 1.21.x port is still pending.
 
-Download the **[ready-to-install shader ZIP](https://github.com/CAFAIML1/LumenVale/raw/refs/heads/main/downloads/LumenVale-2.4.0-MC1.20.1.zip)** and put it in shaderpacks without extracting it. Start with Balanced or choose Ultra for voxel lighting. OpenGL 4.3 is required. Synthetic GPU tests pass; full in-game validation and game FPS are not claimed. Hardware path tracing, arbitrary modded geometry, PBR and Distant Horizons are not implemented.
+Download the **[ready-to-install shader ZIP](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)** and put it in shaderpacks without extracting it. Start with Balanced or choose Ultra for voxel lighting. OpenGL 4.3 is required. Synthetic GPU tests pass; full in-game validation and game FPS are not claimed. Hardware path tracing, arbitrary modded geometry, PBR and Distant Horizons are not implemented.
 
 ## Ліцензія
 

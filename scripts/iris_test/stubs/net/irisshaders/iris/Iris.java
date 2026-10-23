@@ -1,0 +1,2 @@
+package net.irisshaders.iris;
+public class Iris { public static final IrisLogging logger=new IrisLogging(); public static net.irisshaders.iris.config.IrisConfig getIrisConfig(){return new net.irisshaders.iris.config.IrisConfig();}}

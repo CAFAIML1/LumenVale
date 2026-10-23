@@ -37,7 +37,7 @@ void voxelizeBlock(vec3 scenePos,vec2 uv) {
     if(cutout || thinEmitter(m)) return;
     uint shape=voxelShapeId(m);
     if(shape!=0u) imageAtomicMax(voxelShape,cell,shape);
-    imageAtomicMax(voxelOccupancy,cell,LV_SOLID|(shape!=0u?LV_PARTIAL:0u)|voxelPack(albedo));
+    imageAtomicMax(voxelOccupancy,cell,LV_SOLID|(shape!=0u?LV_PARTIAL:0u)|(level>0?LV_EMITTER:0u)|voxelPack(albedo));
 #ifdef COLORED_LIGHT_BOUNCE
     vec3 normal=normalize(mat3(shadowModelViewInverse)*(gl_NormalMatrix*gl_Normal));
     // Six independent faces prevent a colored top from tinting every side.

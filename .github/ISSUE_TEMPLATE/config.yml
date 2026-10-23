@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Встановлення та налаштування
+    url: https://github.com/CAFAIML1/LumenVale/blob/main/README_UA.md
+    about: Як установити ZIP і вибрати профіль.
+  - name: Матриця сумісності
+    url: https://github.com/CAFAIML1/LumenVale/blob/main/docs/COMPATIBILITY.md
+    about: Режими Iris, відповідні версії Sodium та межі перевірок.

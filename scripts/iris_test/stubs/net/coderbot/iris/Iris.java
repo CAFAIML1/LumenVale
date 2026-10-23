@@ -1,0 +1,2 @@
+package net.coderbot.iris;
+public class Iris { public static final IrisLogging logger=new IrisLogging(); public static net.coderbot.iris.config.IrisConfig getIrisConfig(){return new net.coderbot.iris.config.IrisConfig();}}

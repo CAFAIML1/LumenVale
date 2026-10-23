@@ -32,7 +32,9 @@ void main() {
 #endif
 #ifdef TERRAIN
     vMaterial = mc_Entity.x;
+#ifdef IRIS_FEATURE_BLOCK_EMISSION_ATTRIBUTE
     vEmission = clamp(at_midBlock.w/15.0,0.0,1.0);
+#endif
     float top = 1.0-step(mc_midTexCoord.y,vTexCoord.y);
     scene.xyz += foliageOffset(scene.xyz+cameraPosition,mc_Entity.x,top);
     view = gbufferModelView*scene;

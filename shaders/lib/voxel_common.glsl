@@ -4,6 +4,7 @@
 const int LV_VOXEL_SIZE = 64;
 const uint LV_SOLID = 0x80000000u;
 const uint LV_FILTER = 0x40000000u;
+const uint LV_EMITTER = 0x10000000u;
 #include "/lib/voxel_shapes.glsl"
 vec3 voxelOrigin() { return floor(cameraPosition)-vec3(32.0); }
 ivec3 voxelCell(vec3 worldPos) { return ivec3(floor(worldPos-voxelOrigin())); }

@@ -18,8 +18,12 @@ for file in files:
 dest=root/'dist';dest.mkdir(exist_ok=True)
 archive=dest/f'LumenVale-{match[1]}-MC1.20.1.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as package:
-    for file in sorted(files):
+    # Path ordering is case-insensitive on Windows; archive ordering must not be.
+    for file in sorted(files,key=lambda file:file.relative_to(root).as_posix()):
         info=zipfile.ZipInfo(file.relative_to(root).as_posix(),date_time=(2026,1,1,0,0,0))
+        # Stable metadata across Windows development and Linux CI runners.
+        info.create_system=3
+        info.external_attr=0o100644 << 16
         info.compress_type=zipfile.ZIP_DEFLATED
         package.writestr(info,file.read_bytes())
 with zipfile.ZipFile(archive) as package:

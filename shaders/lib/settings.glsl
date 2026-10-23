@@ -1,7 +1,7 @@
 #ifndef LV_SETTINGS
 #define LV_SETTINGS
 
-// LumenVale 2.2.0 - Directional face bounce / logical emitter spectra.
+// LumenVale 2.5.0 - Optional voxel features / filtered surface light.
 #define SHADOWS // Directional shadow mapping.
 const int shadowMapResolution = 2048; // [1024 2048 3072 4096]
 const float shadowDistance = 96.0; // [48.0 64.0 96.0 128.0 160.0]
@@ -24,6 +24,7 @@ const float shadowDistance = 96.0; // [48.0 64.0 96.0 128.0 160.0]
 #define WAVING_FOLIAGE // Animate leaves and plants in geometry and shadows.
 #define WIND_STRENGTH 0.65 // [0.0 0.35 0.65 1.0 1.4]
 #define HAND_LIGHT // Warm light for emissive items in either hand.
+//#define LEGACY_LEFT_HAND // Iris 1.6.x: match the player's left main hand manually.
 #define BLOOM // Half-resolution, separable highlight bloom.
 #define BLOOM_STRENGTH 0.14 // [0.0 0.08 0.14 0.2 0.3]
 #define FXAA // Spatial edge antialiasing, without temporal history.
@@ -61,4 +62,5 @@ const float eyeBrightnessHalflife = 6.0;
 const float centerDepthHalflife = 0.75;
 const float voxelDistance = 48.0;
 
+#include "/lib/compatibility.glsl"
 #endif

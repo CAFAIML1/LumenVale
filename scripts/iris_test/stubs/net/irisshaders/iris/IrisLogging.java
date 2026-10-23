@@ -1,0 +1,2 @@
+package net.irisshaders.iris;
+public class IrisLogging {public static final boolean ENABLE_SPAM=false;public static int errors=0;public void error(String s){errors++;throw new AssertionError(s);}public void error(String s,Throwable t){throw new AssertionError(s,t);}public void fatal(String s,Throwable t){throw new AssertionError(s,t);}public void warn(String s){System.err.println(s);}public void debug(String s){}public void info(String s){}}

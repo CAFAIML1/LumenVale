@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 15,
-    "description": "LumenVale 2.4.0 | Shape-aware voxel light for slabs, stairs and carpets | Iris 1.7.6 | Java 1.20.1"
+    "description": "LumenVale 2.5.0 | Faster voxel sampling | Iris capability fallback | Java 1.20.1"
   }
 }

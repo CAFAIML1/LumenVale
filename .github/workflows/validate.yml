@@ -2,6 +2,7 @@ name: Validate shader pack
 
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -51,4 +52,5 @@ jobs:
             .validation/glsl/result.json
             .validation/iris/result.json
           if-no-files-found: warn
+          include-hidden-files: true
           retention-days: 7

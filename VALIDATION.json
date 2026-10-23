@@ -1,0 +1,1204 @@
+{
+  "version": "2.4.0",
+  "iris_directive_regression": {
+    "iris_version": "1.7.6+mc1.20.1",
+    "original_exception_reproduced": true,
+    "fixed_clear_colors_accepted": 3,
+    "fixed_parser_errors": 0,
+    "scope": "Original Iris binary directive parser; Minecraft-dependent logging host stubbed. Not full Minecraft runtime."
+  },
+  "logical_voxel_lighting": {
+    "scope": "Native synthetic GPU tests of actual vertex capture and compute programs. Not Minecraft runtime.",
+    "independent_face_albedos": [
+      [
+        0.5411764979362488,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.5176470875740051
+      ],
+      [
+        0.0,
+        0.8823529481887817,
+        0.0
+      ],
+      [
+        0.5411764979362488,
+        0.843137264251709,
+        0.0
+      ],
+      [
+        0.5411764979362488,
+        0.0,
+        0.5176470875740051
+      ],
+      [
+        0.0,
+        0.843137264251709,
+        0.5176470875740051
+      ]
+    ],
+    "emitter_spectra": {
+      "10020": [
+        1.0,
+        0.4000000059604645,
+        0.09019608050584793
+      ],
+      "10021": [
+        0.10196078568696976,
+        0.6196078658103943,
+        1.0
+      ],
+      "10022": [
+        1.0,
+        0.7607843279838562,
+        0.34117648005485535
+      ],
+      "10023": [
+        0.47843137383461,
+        0.8392156958580017,
+        1.0
+      ],
+      "10024": [
+        0.3176470696926117,
+        0.0117647061124444,
+        0.003921568859368563
+      ],
+      "10025": [
+        1.0,
+        0.41960784792900085,
+        0.7803921699523926
+      ],
+      "10100": [
+        1.0,
+        0.4901960790157318,
+        0.20000000298023224
+      ],
+      "10101": [
+        1.0,
+        0.8313725590705872,
+        0.4000000059604645
+      ],
+      "10102": [
+        0.43921568989753723,
+        1.0,
+        0.5686274766921997
+      ],
+      "10103": [
+        1.0,
+        0.9019607901573181,
+        0.7803921699523926
+      ],
+      "10104": [
+        0.6000000238418579,
+        0.2705882489681244,
+        1.0
+      ],
+      "10105": [
+        0.5215686559677124,
+        0.10980392247438431,
+        1.0
+      ],
+      "10106": [
+        0.5607843399047852,
+        0.18039216101169586,
+        1.0
+      ],
+      "10107": [
+        0.03529411926865578,
+        0.6392157077789307,
+        0.8705882430076599
+      ],
+      "10108": [
+        0.501960813999176,
+        1.0,
+        0.7686274647712708
+      ],
+      "10109": [
+        1.0,
+        0.6392157077789307,
+        0.16862745583057404
+      ],
+      "10110": [
+        0.8784313797950745,
+        0.9607843160629272,
+        1.0
+      ],
+      "10111": [
+        0.239215686917305,
+        0.9098039269447327,
+        1.0
+      ],
+      "10112": [
+        1.0,
+        0.4000000059604645,
+        0.09019608050584793
+      ],
+      "10113": [
+        0.5607843399047852,
+        0.18039216101169586,
+        1.0
+      ],
+      "10114": [
+        1.0,
+        0.4000000059604645,
+        0.09019608050584793
+      ],
+      "10115": [
+        1.0,
+        0.5607843399047852,
+        0.250980406999588
+      ],
+      "10116": [
+        0.5607843399047852,
+        0.18039216101169586,
+        1.0
+      ],
+      "10117": [
+        1.0,
+        0.4000000059604645,
+        0.09019608050584793
+      ]
+    },
+    "zero_level_mapped_emitters_stay_dark": true,
+    "thin_emitters_do_not_occlude_full_cells": true,
+    "face_bounce": {
+      "red": [
+        0.09942626953125,
+        0.0,
+        0.0
+      ],
+      "blue": [
+        0.0,
+        0.0,
+        0.0950927734375
+      ],
+      "green": [
+        0.0,
+        0.162109375,
+        0.0
+      ]
+    },
+    "incident_spectrum_times_albedo": {
+      "white": [
+        0.09942626953125,
+        0.0,
+        0.0
+      ],
+      "red": [
+        0.09942626953125,
+        0.0,
+        0.0
+      ],
+      "blue": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "back_facing_incidence_rejected": true,
+    "hemisphere": {
+      "forward": 0.7998046875,
+      "tangent": 0.51953125,
+      "backward": 0.0
+    },
+    "light_level_range": {
+      "bright": [
+        4.0,
+        3.19921875,
+        2.55859375,
+        2.046875,
+        1.63671875,
+        1.30859375
+      ],
+      "dim": [
+        1.00390625,
+        0.802734375,
+        0.64208984375,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mixed_red_blue": [
+      2.525390625,
+      0.0,
+      0.0335693359375
+    ],
+    "bounded_bounce_energy": true,
+    "per_face_data_cleared": true,
+    "gl_error": 0
+  },
+  "iris_shape_texture_parser": {
+    "iris_version": "1.7.6",
+    "original_raw_texture_parser_accepted": true,
+    "width": 2,
+    "height": 1175,
+    "bytes": 37600,
+    "scope": "Unmodified Iris texture directive parser; unrelated constructor bypassed. Not Minecraft runtime."
+  },
+  "partial_block_geometry": {
+    "geometry_source": "Vanilla Minecraft 1.20.1 model elements and blockstate rotations; numeric bounds only.",
+    "unique_shapes": 278,
+    "mapped_states": 7196,
+    "block_types": 236,
+    "stairs_states_checked": 40,
+    "native_mesh_capture_cells": 3,
+    "horizontal_slab_passes": 1.046875,
+    "horizontal_carpet_passes": 1.046875,
+    "horizontal_full_cube_blocks": 0.0,
+    "vertical_slab_blocks": 0.0,
+    "vertical_top_slab_blocks": 0.0,
+    "hand_through_open_slab_rgb": [
+      0.208984375,
+      0.208984375,
+      0.208984375
+    ],
+    "hand_through_solid_slab_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "exposed_slab_top_rgb": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "slab_underside_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shape_field_cleared": true,
+    "gl_error": 0,
+    "scope": "Native GPU, real pack vertex/compute/hand/sample code. Synthetic geometry and uniforms, not the user Minecraft room."
+  },
+  "handheld_lighting": {
+    "spectra": {
+      "10010": [
+        1.6201171875,
+        1.6201171875,
+        1.6201171875
+      ],
+      "10011": [
+        1.6201171875,
+        0.3564453125,
+        0.040496826171875
+      ],
+      "10020": [
+        1.6201171875,
+        0.64794921875,
+        0.1458740234375
+      ],
+      "10021": [
+        0.1619873046875,
+        1.0048828125,
+        1.6201171875
+      ],
+      "10022": [
+        1.6201171875,
+        1.2314453125,
+        0.55078125
+      ],
+      "10023": [
+        0.77783203125,
+        1.361328125,
+        1.6201171875
+      ],
+      "10024": [
+        1.6201171875,
+        0.056732177734375,
+        0.01296234130859375
+      ],
+      "10025": [
+        1.6201171875,
+        0.6806640625,
+        1.263671875
+      ],
+      "10100": [
+        1.6201171875,
+        0.7939453125,
+        0.323974609375
+      ],
+      "10101": [
+        1.6201171875,
+        1.3447265625,
+        0.64794921875
+      ],
+      "10102": [
+        0.712890625,
+        1.6201171875,
+        0.923828125
+      ],
+      "10103": [
+        1.6201171875,
+        1.4580078125,
+        1.263671875
+      ],
+      "10104": [
+        0.97216796875,
+        0.4375,
+        1.6201171875
+      ],
+      "10105": [
+        0.8427734375,
+        0.17822265625,
+        1.6201171875
+      ],
+      "10107": [
+        0.056732177734375,
+        1.037109375,
+        1.41015625
+      ],
+      "10108": [
+        0.81005859375,
+        1.6201171875,
+        1.248046875
+      ],
+      "10110": [
+        1.42578125,
+        1.5556640625,
+        1.6201171875
+      ],
+      "10111": [
+        0.388916015625,
+        1.474609375,
+        1.6201171875
+      ],
+      "10112": [
+        1.6201171875,
+        0.64794921875,
+        0.1458740234375
+      ],
+      "10113": [
+        0.90771484375,
+        0.291748046875,
+        1.6201171875
+      ],
+      "10114": [
+        1.6201171875,
+        0.64794921875,
+        0.1458740234375
+      ],
+      "10115": [
+        1.6201171875,
+        0.90771484375,
+        0.405029296875
+      ],
+      "10116": [
+        0.90771484375,
+        0.291748046875,
+        1.6201171875
+      ],
+      "10117": [
+        1.6201171875,
+        0.64794921875,
+        0.1458740234375
+      ],
+      "10200": [
+        1.6201171875,
+        0.3564453125,
+        0.040496826171875
+      ],
+      "10201": [
+        1.6201171875,
+        1.037109375,
+        0.275390625
+      ]
+    },
+    "main_and_offhand_independent": true,
+    "dual_light_additive": true,
+    "left_handed_setting_respected": true,
+    "zero_level_stays_dark": true,
+    "disable_works": true,
+    "brightness_and_range_follow_level": true,
+    "closed_wall_rgb": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "door_rgb": [
+      1.0810546875,
+      1.0810546875,
+      1.0810546875
+    ],
+    "axis_aligned_ray_filters_each_cell_once": true,
+    "red_glass_rgb": [
+      1.025390625,
+      0.059356689453125,
+      0.042388916015625
+    ],
+    "hand_model_emissive_rgb": [
+      1.3017578125,
+      0.70361328125,
+      1.6123046875
+    ],
+    "hand_surface_marker": -1.0,
+    "scope": "Real GLSL on native GPU with synthetic uniforms, voxel cells and hand geometry. Not Minecraft runtime."
+  },
+  "surface_reflections": {
+    "old_false_blue_pixels": 119080,
+    "new_false_blue_pixels": 0,
+    "true_green_panel_reflection_pixels": 12296,
+    "coplanar_self_hit_max_rgb": 0.01200103759765625,
+    "gl_error": 0,
+    "scope": "Analytical synthetic indoor floor/wall/panel, compared against packaged 2.2.0 GLSL. Not a reproduction of the user screenshot."
+  },
+  "offline": {
+    "compiler": "Glslang Version: 11:16.6.0",
+    "profiles": [
+      "PERFORMANCE",
+      "BALANCED",
+      "HIGH",
+      "ULTRA",
+      "ALL_EFFECTS_OFF",
+      "OPTION_EXTREMES",
+      "VOXEL_WITHOUT_SHADOWS",
+      "VOXEL_NO_MATERIAL_EFFECTS"
+    ],
+    "program_pairs_per_configuration": 69,
+    "program_configurations_checked": 552,
+    "unique_source_pairs": 387,
+    "failed_pairs": 0,
+    "compute_configurations_checked": 528,
+    "unique_compute_sources": 144,
+    "failed_compute": 0,
+    "scope": "Offline GLSL 4.30 compatibility graphics and compute syntax, vertex/fragment link, includes. No injected format definitions. Not Minecraft runtime or performance."
+  },
+  "gpu": {
+    "renderer": "NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2",
+    "opengl": "4.6.0 NVIDIA 616.92",
+    "driver_program_configurations": 276,
+    "unique_programs_linked": 371,
+    "driver_compute_configurations": 264,
+    "synthetic_render_cases": [
+      {
+        "case": "Day",
+        "mean_rgb": [
+          93.53477430555556,
+          132.30005208333333,
+          110.59978202160494
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Sunset",
+        "mean_rgb": [
+          94.31368827160493,
+          103.24666473765433,
+          98.45836612654321
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Night",
+        "mean_rgb": [
+          15.636886574074074,
+          25.53361111111111,
+          30.832170138888888
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Rain",
+        "mean_rgb": [
+          98.09685956790123,
+          124.22117283950617,
+          118.27718171296296
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Nether",
+        "mean_rgb": [
+          45.36780864197531,
+          14.746811342592592,
+          4.836363811728395
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "End",
+        "mean_rgb": [
+          34.18927276234568,
+          26.579010416666666,
+          44.55043788580247
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Underwater",
+        "mean_rgb": [
+          30.858198302469138,
+          59.18846450617284,
+          63.437293595679016
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Shallows",
+        "mean_rgb": [
+          75.3388599537037,
+          110.50020833333333,
+          102.90618441358025
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Flat",
+        "mean_rgb": [
+          93.26556327160493,
+          132.0435686728395,
+          110.33394097222222
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "No SSR",
+        "mean_rgb": [
+          94.00300925925926,
+          132.86741319444445,
+          111.51241705246913
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Animated",
+        "mean_rgb": [
+          93.58144097222223,
+          132.26566550925926,
+          110.48218942901235
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Underwater No SSR",
+        "mean_rgb": [
+          22.739890046296296,
+          54.19139660493827,
+          63.273514660493824
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Underwater Flat",
+        "mean_rgb": [
+          30.317851080246914,
+          58.4646450617284,
+          62.4727237654321
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Shoreline",
+        "mean_rgb": [
+          68.32273341049383,
+          95.79756944444445,
+          83.96844521604939
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Shoreline No Refraction",
+        "mean_rgb": [
+          68.251612654321,
+          95.85714313271605,
+          84.09935956790123
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Profile PERFORMANCE",
+        "mean_rgb": [
+          94.15794753086419,
+          135.91164930555556,
+          111.18476851851852
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Profile BALANCED",
+        "mean_rgb": [
+          94.00563850308642,
+          132.83836033950618,
+          111.47336033950617
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Profile HIGH",
+        "mean_rgb": [
+          93.53477430555556,
+          132.30005208333333,
+          110.59978202160494
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Profile ULTRA",
+        "mean_rgb": [
+          100.29028356481481,
+          135.4342611882716,
+          112.76690972222222
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra Night",
+        "mean_rgb": [
+          19.704340277777778,
+          31.790416666666665,
+          32.531350308641976
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No Voxel",
+        "mean_rgb": [
+          15.615497685185185,
+          25.84221450617284,
+          32.99016782407407
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra Rain",
+        "mean_rgb": [
+          102.96277006172839,
+          125.12371527777778,
+          124.40088541666667
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No Surface",
+        "mean_rgb": [
+          99.24597029320988,
+          123.30135030864197,
+          117.21187692901235
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra Sunset",
+        "mean_rgb": [
+          105.15394483024691,
+          109.41776041666667,
+          98.61078703703704
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No Volume",
+        "mean_rgb": [
+          95.50189043209876,
+          106.18918209876543,
+          96.75179398148148
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No DOF",
+        "mean_rgb": [
+          100.21979938271605,
+          135.28496334876544,
+          112.66255401234568
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No PCSS",
+        "mean_rgb": [
+          100.28322916666667,
+          135.40060570987654,
+          112.76526041666666
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra No Grade",
+        "mean_rgb": [
+          102.28359375,
+          136.99835262345678,
+          113.34686728395062
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra Nether",
+        "mean_rgb": [
+          43.89139081790123,
+          19.608501157407407,
+          5.250686728395062
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      },
+      {
+        "case": "Ultra End",
+        "mean_rgb": [
+          35.33795138888889,
+          30.297582947530863,
+          44.31173418209877
+        ],
+        "black_pixels": 0,
+        "hdr_finite": true,
+        "gl_error": 0
+      }
+    ],
+    "scope": "Native OpenGL compilation/link and synthetic rendering. No injected format definitions. Not Minecraft runtime; no game FPS benchmark."
+  },
+  "voxel": {
+    "scope": "Synthetic native OpenGL using the actual pack shadow vertex shader and all 22 compute passes; not Minecraft runtime.",
+    "capture": {
+      "occupied_cells": 1,
+      "emitter_cells": 2,
+      "warm_rgb": [
+        1.0,
+        0.4000000059604645,
+        0.09019608050584793
+      ],
+      "soul_rgb": [
+        0.10196078568696976,
+        0.6196078658103943,
+        1.0
+      ]
+    },
+    "occlusion": {
+      "lit_red_next_to_source": 3.19921875,
+      "behind_closed_wall": 0.0,
+      "behind_open_door_red": 1.046875
+    },
+    "cleared_next_frame": true,
+    "camera_grid_shift_correct": true,
+    "radiance_finite": true,
+    "grid": [
+      64,
+      64,
+      64
+    ],
+    "direct_propagation_passes": 12,
+    "indirect_propagation_passes": 8,
+    "volume_bytes": 15728640
+  },
+  "material_lighting": {
+    "scope": "Native synthetic GPU tests using pack vertex capture, all 22 compute passes and actual shadow helpers. Not Minecraft runtime.",
+    "capture": {
+      "filter_materials": 20,
+      "unique_stained_glass_colors": 16,
+      "transparent_blocks_emit_no_light": true
+    },
+    "local_transmission": {
+      "red_glass": [
+        0.99365234375,
+        0.057464599609375,
+        0.04107666015625
+      ],
+      "blue_glass": [
+        0.06982421875,
+        0.1888427734375,
+        1.005859375
+      ],
+      "clear_glass": [
+        1.0146484375,
+        1.0146484375,
+        1.0146484375
+      ],
+      "red_and_blue_layers": [
+        0.066162109375,
+        0.01036834716796875,
+        0.0394287109375
+      ],
+      "tinted_glass": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "diffuse_bounce": {
+      "red": [
+        0.0574951171875,
+        0.00041675567626953125,
+        0.0
+      ],
+      "blue": [
+        0.0,
+        0.00041675567626953125,
+        0.05499267578125
+      ],
+      "dark": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "white": [
+        0.0574951171875,
+        0.09375,
+        0.05499267578125
+      ]
+    },
+    "direct_field_independent_of_reflector_color": true,
+    "reflection_does_not_leak_through_wall": true,
+    "sunlight_transmission": {
+      "red": [
+        0.94873046875,
+        0.054901123046875,
+        0.039215087890625
+      ],
+      "blue": [
+        0.066650390625,
+        0.1802978515625,
+        0.96044921875
+      ],
+      "clear": [
+        0.96826171875,
+        0.96826171875,
+        0.96826171875
+      ],
+      "tinted": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opaque": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "glass_in_front_of_probe_does_not_tint": true,
+    "all_finite": true,
+    "gl_error": 0
+  },
+  "cinematic_feature_pixel_differences": {
+    "voxel": 3.744760274887085,
+    "wet_reflections": 4.677768230438232,
+    "volume": 6.120892524719238,
+    "dof": 0.8659561276435852,
+    "pcss": 0.06865676492452621,
+    "grade": 2.6378092765808105
+  },
+  "iris_release_features": {
+    "iris_version": "1.7.6+mc1.20.1",
+    "release": "https://modrinth.com/mod/iris/version/1.7.6%2B1.20.1",
+    "required_feature_names_present_in_release_binary": [
+      "CUSTOM_IMAGES",
+      "COMPUTE_SHADERS",
+      "REVERSED_CULLING",
+      "BLOCK_EMISSION_ATTRIBUTE"
+    ],
+    "release_hash_verified": true,
+    "scope": "Release metadata, verified binary hash and feature enum names only. Not a Minecraft run, shader pack load or Iris patcher test."
+  },
+  "profiles": {
+    "exported_options": {
+      "PERFORMANCE": {
+        "WAVING_FOLIAGE": true,
+        "HAND_LIGHT": true,
+        "FXAA": true,
+        "SHADOWS": false,
+        "shadowMapResolution": "1024",
+        "shadowDistance": "48.0",
+        "SHADOW_SAMPLES": "1",
+        "AO_SAMPLES": "0",
+        "CLOUD_QUALITY": "0",
+        "BLOOM": false,
+        "WATER_DETAIL": "0",
+        "WATER_REFRACTION": "0.0",
+        "WATER_CLOUD_REFLECTION": false,
+        "WATER_SSR_STEPS": "0",
+        "WATER_CAUSTICS": "0.0",
+        "WATER_RAIN_RIPPLES": false,
+        "WATER_FOAM": "0.0",
+        "VOXEL_LIGHTING": false,
+        "VOLUMETRIC_LIGHT": false,
+        "SHADOW_PCSS": false,
+        "CINEMATIC_SURFACES": false,
+        "CINEMATIC_GRADE": false,
+        "DEPTH_OF_FIELD": false,
+        "COLORED_LIGHT_BOUNCE": false,
+        "COLORED_LIGHT_TRANSMISSION": false,
+        "LIGHT_BOUNCE_STRENGTH": "0.75",
+        "GLASS_TINT_STRENGTH": "1.0",
+        "VOXEL_STRENGTH": "1.0",
+        "VOLUMETRIC_STEPS": "24",
+        "VOLUMETRIC_DENSITY": "1.0",
+        "SURFACE_SSR_STEPS": "24",
+        "DOF_STRENGTH": "0.35",
+        "BLOOM_STRENGTH": "0.14",
+        "VIGNETTE_STRENGTH": "0.1"
+      },
+      "BALANCED": {
+        "WAVING_FOLIAGE": true,
+        "HAND_LIGHT": true,
+        "FXAA": true,
+        "SHADOWS": true,
+        "shadowMapResolution": "2048",
+        "shadowDistance": "96.0",
+        "SHADOW_SAMPLES": "4",
+        "AO_SAMPLES": "4",
+        "CLOUD_QUALITY": "1",
+        "BLOOM": true,
+        "WATER_DETAIL": "1",
+        "WATER_REFRACTION": "0.65",
+        "WATER_CLOUD_REFLECTION": true,
+        "WATER_SSR_STEPS": "0",
+        "WATER_CAUSTICS": "0.0",
+        "WATER_RAIN_RIPPLES": false,
+        "WATER_FOAM": "0.3",
+        "VOXEL_LIGHTING": false,
+        "VOLUMETRIC_LIGHT": false,
+        "SHADOW_PCSS": false,
+        "CINEMATIC_SURFACES": false,
+        "CINEMATIC_GRADE": false,
+        "DEPTH_OF_FIELD": false,
+        "COLORED_LIGHT_BOUNCE": false,
+        "COLORED_LIGHT_TRANSMISSION": false,
+        "LIGHT_BOUNCE_STRENGTH": "0.75",
+        "GLASS_TINT_STRENGTH": "1.0",
+        "VOXEL_STRENGTH": "1.0",
+        "VOLUMETRIC_STEPS": "24",
+        "VOLUMETRIC_DENSITY": "1.0",
+        "SURFACE_SSR_STEPS": "24",
+        "DOF_STRENGTH": "0.35",
+        "BLOOM_STRENGTH": "0.14",
+        "VIGNETTE_STRENGTH": "0.1"
+      },
+      "HIGH": {
+        "WAVING_FOLIAGE": true,
+        "HAND_LIGHT": true,
+        "FXAA": true,
+        "SHADOWS": true,
+        "shadowMapResolution": "3072",
+        "shadowDistance": "128.0",
+        "SHADOW_SAMPLES": "8",
+        "AO_SAMPLES": "8",
+        "CLOUD_QUALITY": "2",
+        "BLOOM": true,
+        "WATER_DETAIL": "2",
+        "WATER_REFRACTION": "0.65",
+        "WATER_CLOUD_REFLECTION": true,
+        "WATER_SSR_STEPS": "16",
+        "WATER_CAUSTICS": "0.25",
+        "WATER_RAIN_RIPPLES": true,
+        "WATER_FOAM": "0.3",
+        "VOXEL_LIGHTING": false,
+        "VOLUMETRIC_LIGHT": false,
+        "SHADOW_PCSS": false,
+        "CINEMATIC_SURFACES": false,
+        "CINEMATIC_GRADE": false,
+        "DEPTH_OF_FIELD": false,
+        "COLORED_LIGHT_BOUNCE": false,
+        "COLORED_LIGHT_TRANSMISSION": false,
+        "LIGHT_BOUNCE_STRENGTH": "0.75",
+        "GLASS_TINT_STRENGTH": "1.0",
+        "VOXEL_STRENGTH": "1.0",
+        "VOLUMETRIC_STEPS": "24",
+        "VOLUMETRIC_DENSITY": "1.0",
+        "SURFACE_SSR_STEPS": "24",
+        "DOF_STRENGTH": "0.35",
+        "BLOOM_STRENGTH": "0.14",
+        "VIGNETTE_STRENGTH": "0.1"
+      },
+      "ULTRA": {
+        "WAVING_FOLIAGE": true,
+        "HAND_LIGHT": true,
+        "FXAA": true,
+        "SHADOWS": true,
+        "shadowMapResolution": "4096",
+        "shadowDistance": "160.0",
+        "SHADOW_SAMPLES": "16",
+        "AO_SAMPLES": "12",
+        "CLOUD_QUALITY": "3",
+        "BLOOM": true,
+        "WATER_DETAIL": "3",
+        "WATER_REFRACTION": "0.65",
+        "WATER_CLOUD_REFLECTION": true,
+        "WATER_SSR_STEPS": "40",
+        "WATER_CAUSTICS": "0.4",
+        "WATER_RAIN_RIPPLES": true,
+        "WATER_FOAM": "0.3",
+        "VOXEL_LIGHTING": true,
+        "VOLUMETRIC_LIGHT": true,
+        "SHADOW_PCSS": true,
+        "CINEMATIC_SURFACES": true,
+        "CINEMATIC_GRADE": true,
+        "DEPTH_OF_FIELD": true,
+        "COLORED_LIGHT_BOUNCE": true,
+        "COLORED_LIGHT_TRANSMISSION": true,
+        "LIGHT_BOUNCE_STRENGTH": "0.75",
+        "GLASS_TINT_STRENGTH": "1.0",
+        "VOXEL_STRENGTH": "1.0",
+        "VOLUMETRIC_STEPS": "24",
+        "VOLUMETRIC_DENSITY": "1.0",
+        "SURFACE_SSR_STEPS": "24",
+        "DOF_STRENGTH": "0.35",
+        "BLOOM_STRENGTH": "0.2",
+        "VIGNETTE_STRENGTH": "0.15"
+      }
+    },
+    "checks": {
+      "profiles_from": "Emitted shaders.properties, checked against settings and documented Iris option grammar.",
+      "mean_pixel_differences": {
+        "PERFORMANCE vs BALANCED": 2.483013153076172,
+        "BALANCED vs HIGH": 0.8913464546203613,
+        "HIGH vs ULTRA": 6.118692874908447
+      },
+      "synthetic_pipeline_elapsed": {
+        "PERFORMANCE": {
+          "median_elapsed_ms": 0.275456,
+          "samples_ms": [
+            0.27648,
+            0.27648,
+            0.275456,
+            0.268288,
+            0.274432,
+            0.282624,
+            0.27136
+          ],
+          "shadow_pass": false,
+          "bloom_passes": 0,
+          "voxel_compute_passes": 0,
+          "volumetric_pass": false
+        },
+        "BALANCED": {
+          "median_elapsed_ms": 1.527808,
+          "samples_ms": [
+            1.212416,
+            1.527808,
+            1.644544,
+            1.507328,
+            1.666048,
+            1.117184,
+            1.867776
+          ],
+          "shadow_pass": true,
+          "bloom_passes": 2,
+          "voxel_compute_passes": 0,
+          "volumetric_pass": false
+        },
+        "HIGH": {
+          "median_elapsed_ms": 1.635328,
+          "samples_ms": [
+            1.755136,
+            1.635328,
+            1.76128,
+            1.3312,
+            1.343488,
+            1.247232,
+            1.741824
+          ],
+          "shadow_pass": true,
+          "bloom_passes": 2,
+          "voxel_compute_passes": 0,
+          "volumetric_pass": false
+        },
+        "ULTRA": {
+          "median_elapsed_ms": 11.123712,
+          "samples_ms": [
+            13.591552,
+            11.191296,
+            11.584512,
+            11.123712,
+            10.732544,
+            10.579968,
+            10.984448
+          ],
+          "shadow_pass": true,
+          "bloom_passes": 2,
+          "voxel_compute_passes": 22,
+          "volumetric_pass": true
+        }
+      },
+      "timing_scope": "960x540 synthetic scene. GL_TIME_ELAPSED includes pipeline submission gaps. Seven samples after warmup. NOT Minecraft FPS or a general performance guarantee."
+    }
+  },
+  "shoreline_refraction": {
+    "results": {
+      "1.1.0": {
+        "water_pixels": 178955,
+        "land_color_leaked_pixels": 1
+      },
+      "2.4.0": {
+        "water_pixels": 178955,
+        "land_color_leaked_pixels": 0
+      }
+    },
+    "scope": "Synthetic transmission-only land/floor ID-color test. Not a reproduction of the full user Minecraft screenshot."
+  },
+  "water": {
+    "rendered_pixel_differences": {
+      "no ssr_mean_pixel_delta": 2.5187954902648926,
+      "flat_mean_pixel_delta": 3.1820034980773926,
+      "animated_mean_pixel_delta": 3.0238442420959473
+    },
+    "sampling": "Water reads immutable opaque HDR scene in colortex4 and opaque depthtex1; writes only colortex0.",
+    "scope": "Synthetic scene comparison with SSR disabled, water detail disabled, and changed animation time. Not Minecraft runtime."
+  },
+  "rgba16f_fix": {
+    "original_failure_reproduced": true,
+    "format_directives_in_multiline_comments": true,
+    "no_injected_format_definitions": true
+  },
+  "packaging": "Root shaders/ directory; all files UTF-8 without BOM; ZIP integrity verified."
+}

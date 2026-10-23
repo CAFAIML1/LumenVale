@@ -1,0 +1,40 @@
+name: Помилка шейдера
+description: Проблема з відображенням, налаштуваннями або завантаженням
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Що сталося та який результат очікувався?
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Версії Minecraft, Iris та LumenVale
+      placeholder: Minecraft 1.20.1, Iris 1.7.6, LumenVale 2.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Профіль
+      options:
+        - Performance
+        - Balanced
+        - High
+        - Ultra
+        - Власні налаштування
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: Відеокарта та операційна система
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Кроки відтворення та скриншоти
+      description: Укажи моди та ресурс-паки, якщо вони впливають на сцену. Прибери особисті дані з журналів перед публікацією.
+    validations:
+      required: true

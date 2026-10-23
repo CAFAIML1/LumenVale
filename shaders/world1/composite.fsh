@@ -1,0 +1,3 @@
+#version 430 compatibility
+#define DIM_END
+#include "/lib/bloom_horizontal.fsh"

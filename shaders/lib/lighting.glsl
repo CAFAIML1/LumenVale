@@ -12,7 +12,9 @@ vec3 surfaceLight(vec3 albedo,vec3 normal,vec3 scenePos,vec3 viewPos,vec2 lm,flo
     vec3 blockColor = vec3(1.75,0.88,0.35)*block;
 #ifdef VOXEL_LIGHTING
     vec4 voxel=voxelLightAt(scenePos,normal);
-    blockColor=mix(blockColor,blockColor*0.12+voxel.rgb,voxel.a);
+    // Do not let vanilla fill bypass occlusion inside the voxel volume.
+    // The border fade restores vanilla lighting outside the local field.
+    blockColor=mix(blockColor,voxel.rgb,voxel.a);
 #endif
 #ifdef HAND_LIGHT
     blockColor+=handheldLight(scenePos,normal);

@@ -1,7 +1,7 @@
 #ifndef LV_SETTINGS
 #define LV_SETTINGS
 
-// LumenVale 2.5.0 - Optional voxel features / filtered surface light.
+// LumenVale 2.6.0 - Geometry-aware surface, fog and handheld light.
 #define SHADOWS // Directional shadow mapping.
 const int shadowMapResolution = 2048; // [1024 2048 3072 4096]
 const float shadowDistance = 96.0; // [48.0 64.0 96.0 128.0 160.0]

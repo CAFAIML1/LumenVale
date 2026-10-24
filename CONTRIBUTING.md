@@ -13,6 +13,8 @@ python scripts/build.py
 python scripts/check_repository.py
 ```
 
+Для змін освітлення додатково встанови `python -m pip install -r scripts/gpu-requirements.txt` і виконай `python scripts/test_voxel_occlusion.py`. Потрібні Python 3.11+ та OpenGL 4.3 compatibility. На Linux для програмного Mesa використай `LIBGL_ALWAYS_SOFTWARE=1 xvfb-run -a python scripts/test_voxel_occlusion.py`. Це тести реального GLSL із контрольованими даними, без запуску Minecraft.
+
 GitHub Actions виконує ці перевірки для push у main і для pull request. Результати містять компіляцію, оригінальні парсери Iris, збірку ZIP, локальні посилання документації та контрольні суми. Наявність зеленого CI не означає запуску Minecraft або перевірки FPS.
 
 Артефакти з dist/ не потрібно комітити. Опубліковані версії в downloads/ оновлюються окремо разом із контрольними сумами й описом змін. Якщо змінився вміст пакета, онови відповідний ZIP перед перевіркою відповідності джерел. Для експериментального випуску з незавершеним ігровим тестом у GitHub Releases потрібно зберігати статус pre-release.

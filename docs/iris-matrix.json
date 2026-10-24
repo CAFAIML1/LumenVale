@@ -23,7 +23,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/URWeWMAt",
       "filename": "iris-mc1.20-1.6.4.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "legacy fallback"
     },
     {
@@ -56,7 +56,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/JHbrO6Zq",
       "filename": "iris-mc1.20.1-1.6.17.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "legacy fallback"
     },
     {
@@ -86,7 +86,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/KHQ2Hnpt",
       "filename": "iris-1.7.0+mc1.20.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -119,7 +119,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/1CMVXDHo",
       "filename": "iris-1.7.2+mc1.20.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -152,7 +152,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/Bi9nvICq",
       "filename": "iris-1.7.5+mc1.20.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -184,7 +184,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/s5eFLITc",
       "filename": "iris-1.7.6+mc1.20.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -216,7 +216,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/MA2sKKaG",
       "filename": "iris-fabric-1.8.0+mc1.21.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -248,7 +248,7 @@
       "release_url": "https://modrinth.com/mod/iris/version/zsoi0dso",
       "filename": "iris-fabric-1.8.8+mc1.21.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     },
     {
@@ -280,13 +280,13 @@
       "release_url": "https://modrinth.com/mod/iris/version/bAo1Qhte",
       "filename": "iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
       "option_property_profile_resource_checks": 4,
-      "original_jcpp_sources_checked": 48,
+      "original_jcpp_sources_checked": 52,
       "mode": "full Ultra"
     }
   ],
   "original_property_option_profile_configurations": 36,
-  "original_jcpp_sources_checked": 432,
-  "unique_preprocessed_stages_compiled": 96,
+  "original_jcpp_sources_checked": 468,
+  "unique_preprocessed_stages_compiled": 104,
   "glsl_compilation": "passed",
   "errors": 0,
   "scope": "Official SHA512-verified Iris JARs. Original include graph, option scanner, profile/property/resource parsers and JCPP executed. Only game logging/debug-config hosts stubbed; no renderer, Fabric resolution, shader patcher, Minecraft launch or game FPS test."

@@ -77,6 +77,11 @@ void main() {
         if(voxelBrightness(spread)>voxelBrightness(light.rgb)+1e-7)
             light=vec4(spread,metadata);
     }
+#ifdef VOXEL_FINAL_DIRECT
+    // After the last direct pass, range metadata is no longer consumed.
+    // Reuse alpha as a filtered geometry mask without another image or pass.
+    light.a=(material&LV_SOLID)!=0u?1.0:0.0;
+#endif
     imageStore(LV_WRITE,p,light);
 }
 #else

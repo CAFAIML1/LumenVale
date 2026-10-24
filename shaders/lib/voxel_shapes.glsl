@@ -27,6 +27,20 @@ bool shapeContains(uint shape,vec3 point) {
         if(all(greaterThan(point,shapeBoxMin(i)+0.00001)) && all(lessThan(point,shapeBoxMax(i)-0.00001))) return true;
     return false;
 }
+// Closed bounds seal zero-width passages at shared full-cube edges.
+bool segmentCrossesVoxel(vec3 start,vec3 end) {
+    vec3 ray=end-start;
+    if((abs(ray.x)<0.0000001 && (start.x<-.00001 || start.x>1.00001))
+    || (abs(ray.y)<0.0000001 && (start.y<-.00001 || start.y>1.00001))
+    || (abs(ray.z)<0.0000001 && (start.z<-.00001 || start.z>1.00001))) return false;
+    vec3 inverse=sign(ray)/max(abs(ray),vec3(0.0000001));
+    vec3 a=(vec3(-.00001)-start)*inverse,b=(vec3(1.00001)-start)*inverse;
+    vec3 entry=mix(min(a,b),vec3(-1e20),lessThan(abs(ray),vec3(0.0000001)));
+    vec3 exit=mix(max(a,b),vec3(1e20),lessThan(abs(ray),vec3(0.0000001)));
+    float first=max(max(entry.x,entry.y),max(entry.z,0.00001));
+    float last=min(min(exit.x,exit.y),min(exit.z,0.99999));
+    return first<=last;
+}
 bool shapeSegmentBlocked(uint shape,vec3 start,vec3 end) {
     if(shape==0u) return true;
     vec3 ray=end-start;

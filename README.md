@@ -5,18 +5,18 @@
 ### Кольорове світло. Жива вода. Атмосферні світи.
 
 [![Перевірки](https://github.com/CAFAIML1/LumenVale/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/CAFAIML1/LumenVale/actions/workflows/validate.yml)
-[![Версія 2.5.0 experimental](https://img.shields.io/badge/version-2.5.0%20experimental-3b887a)](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.5.0)
+[![Версія 2.6.0 experimental](https://img.shields.io/badge/version-2.6.0%20experimental-3b887a)](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.6.0)
 [![Ліцензія MIT](https://img.shields.io/badge/license-MIT-74889a)](LICENSE.txt)
 
 **Minecraft Java 1.20.1 · Iris 1.6.x / 1.7.x · OpenGL 4.3**
 
-**[Завантажити 2.5.0](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.5.0)** · **[Встановлення](#встановлення)** · **[Сумісність](docs/COMPATIBILITY.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
+**[Завантажити 2.6.0](https://github.com/CAFAIML1/LumenVale/releases/tag/v2.6.0)** · **[Встановлення](#встановлення)** · **[Сумісність](docs/COMPATIBILITY.md)** · **[Зміни](CHANGELOG.md)** · **[Повідомити про помилку](https://github.com/CAFAIML1/LumenVale/issues/new/choose)**
 
 </div>
 
 LumenVale поєднує виразне освітлення з чотирма профілями якості. Почни з **Balanced**, а для кольорового воксельного освітлення, об’ємного туману та відбиттів на блоках увімкни **Ultra**.
 
-**Нове у 2.5.0:** швидша вибірка воксельного світла, автоматичний спрощений режим для старіших Iris і матриця перевірок дев’яти випусків. [Режими та версії →](docs/COMPATIBILITY.md)
+**Нове у 2.6.0:** виправлено засвічення крізь закриті кути, плити й діагональні перешкоди; туман враховує геометрію, а вільний простір має швидший шлях вибірки. Додано автоматичні тести перешкод. [Режими та версії →](docs/COMPATIBILITY.md)
 
 ## Можливості
 
@@ -33,7 +33,7 @@ LumenVale поєднує виразне освітлення з чотирма �
 ## Встановлення
 
 1. Підготуй **Minecraft Java 1.20.1** з **Iris 1.7.6** або іншою комбінацією з [матриці сумісності](docs/COMPATIBILITY.md), Fabric Loader та відповідним Sodium. Потрібна відеокарта з OpenGL 4.3.
-2. **[Завантаж LumenVale-2.5.0-MC1.20.1.zip](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)**.
+2. **[Завантаж LumenVale-2.6.0-MC1.20.1.zip](downloads/LumenVale-2.6.0-MC1.20.1.zip?raw=1)**.
 3. У меню Iris відкрий папку шейдерпаків і скопіюй туди ZIP **без розпакування**.
 4. Вибери LumenVale, натисни **«Застосувати»** й відкрий налаштування шейдера.
 5. Вибери профіль. Для повного кольорового освітлення — **Ultra**. Для чіткішого зображення під час гри можна вимкнути «Глибина різкості».
@@ -53,7 +53,7 @@ LumenVale поєднує виразне освітлення з чотирма �
 
 ## Стан і межі
 
-Версія **2.5.0** є експериментальною. Пройдено перевірки компіляції та синтетичні тести на NVIDIA RTX 4060 Laptop GPU; вони не замінюють повний ігровий тест і не є бенчмарком Minecraft. [Що саме перевірено →](docs/VALIDATION.md)
+Версія **2.6.0** є експериментальною. Пройдено перевірки компіляції та синтетичні тести на NVIDIA RTX 4060 Laptop GPU; вони не замінюють повний ігровий тест і не є бенчмарком Minecraft. [Що саме перевірено →](docs/VALIDATION.md)
 
 - Локальна воксельна сітка охоплює приблизно ±32 блоки від камери. Це наближене освітлення, без апаратного RTX та повного трасування шляхів.
 - Поширення кольорового поля має комірку в один блок і оцінку отворів на гранях 4×4; світло з рук перевіряє об’єми підтримуваних форм точніше.
@@ -72,13 +72,13 @@ python scripts/build.py
 python scripts/check_repository.py
 ```
 
-Готовий пакет з’явиться в dist/. GitHub Actions додатково компілює профілі та виміри, запускає оригінальні парсери дев’яти Iris і перевіряє ZIP та контрольні суми. Ігрові тести виконуються окремо. [Команди перевірки та правила внеску →](CONTRIBUTING.md)
+Готовий пакет з’явиться в dist/. GitHub Actions додатково компілює профілі та виміри, запускає оригінальні парсери дев’яти Iris, виконує GLSL-тести перешкод на Mesa й перевіряє ZIP та контрольні суми. Ігрові тести виконуються окремо. [Команди перевірки та правила внеску →](CONTRIBUTING.md)
 
 ## English
 
-LumenVale is an experimental shader pack targeting **Minecraft Java 1.20.1 with full Ultra on supported Iris 1.7.x and a capability fallback for older Iris 1.6.x**, with four quality profiles. Ultra adds local colored voxel lighting, one approximate diffuse bounce, stained-glass transmission, volumetric light and screen-space surface reflections. Both hands support independent source colors. Shape metadata covers vanilla slabs, stairs, carpets and other partial blocks. Version 2.5.0 adds faster light sampling and checks the original parsers from nine Iris releases, including 1.8.14 beta.1; a complete Minecraft 1.21.x port is still pending.
+LumenVale is an experimental shader pack targeting **Minecraft Java 1.20.1 with full Ultra on supported Iris 1.7.x and a capability fallback for older Iris 1.6.x**, with four quality profiles. Ultra adds local colored voxel lighting, one approximate diffuse bounce, stained-glass transmission, volumetric light and screen-space surface reflections. Both hands support independent source colors. Shape metadata covers vanilla slabs, stairs, carpets and other partial blocks. Version 2.6.0 fixes corner leaks in surface/fog sampling and diagonal handheld rays, removes residual vanilla block-light fill inside the voxel volume, and adds executable occlusion regression tests. Nine original Iris parsers are checked, including 1.8.14 beta.1; a complete Minecraft 1.21.x port is still pending.
 
-Download the **[ready-to-install shader ZIP](downloads/LumenVale-2.5.0-MC1.20.1.zip?raw=1)** and put it in shaderpacks without extracting it. Start with Balanced or choose Ultra for voxel lighting. OpenGL 4.3 is required. Synthetic GPU tests pass; full in-game validation and game FPS are not claimed. Hardware path tracing, arbitrary modded geometry, PBR and Distant Horizons are not implemented.
+Download the **[ready-to-install shader ZIP](downloads/LumenVale-2.6.0-MC1.20.1.zip?raw=1)** and put it in shaderpacks without extracting it. Start with Balanced or choose Ultra for voxel lighting. OpenGL 4.3 is required. Synthetic GPU tests pass; full in-game validation and game FPS are not claimed. Hardware path tracing, arbitrary modded geometry, PBR and Distant Horizons are not implemented.
 
 ## Ліцензія
 

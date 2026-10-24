@@ -3,6 +3,9 @@
 #include "/lib/held_material.glsl"
 #ifdef HAND_LIGHT
 #ifdef VOXEL_LIGHTING
+bool handOpaqueCell(ivec3 cell) {
+    return voxelInside(cell) && voxelFullCube(texelFetch(voxelOccupancySampler,cell,0).r);
+}
 // Traverse each crossed block once, including thin glass filters.
 vec3 handTransmission(vec3 start,vec3 end) {
     vec3 a=start+cameraPosition-voxelOrigin();
@@ -26,9 +29,23 @@ vec3 handTransmission(vec3 start,vec3 end) {
 #endif
         if(all(equal(cell,target))) break;
         float crossing=min(next.x,min(next.y,next.z));
-        if(next.x<=crossing+0.000001) {cell.x+=stepDir.x;next.x+=inv.x;}
-        if(next.y<=crossing+0.000001) {cell.y+=stepDir.y;next.y+=inv.y;}
-        if(next.z<=crossing+0.000001) {cell.z+=stepDir.z;next.z+=inv.z;}
+        bvec3 crossed=lessThanEqual(next,vec3(crossing+0.000001));
+        if(int(crossed.x)+int(crossed.y)+int(crossed.z)>1) {
+            // Simultaneous axis steps must also cover opaque flank cells.
+            for(int axis=0;axis<3;axis++) if(crossed[axis]) {
+                ivec3 flank=cell;flank[axis]+=stepDir[axis];
+                if(handOpaqueCell(flank)) return vec3(0.0);
+            }
+            if(all(crossed)) {
+                for(int axis=0;axis<3;axis++) {
+                    ivec3 flank=cell+stepDir;flank[axis]=cell[axis];
+                    if(handOpaqueCell(flank)) return vec3(0.0);
+                }
+            }
+        }
+        if(crossed.x) {cell.x+=stepDir.x;next.x+=inv.x;}
+        if(crossed.y) {cell.y+=stepDir.y;next.y+=inv.y;}
+        if(crossed.z) {cell.z+=stepDir.z;next.z+=inv.z;}
     }
     return transmission;
 }

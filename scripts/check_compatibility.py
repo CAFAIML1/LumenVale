@@ -32,7 +32,7 @@ def configure(src,settings):
             src=re.sub(r'^(#define '+key+r')\s+[^\n]+$',r'\g<1> '+value,src,flags=re.M)
             src=re.sub(r'^(const (?:int|float) '+key+r' = )[^;]+;',r'\g<1>'+value+';',src,flags=re.M)
     return src
-selected=['gbuffers_terrain.vsh','gbuffers_hand.vsh','gbuffers_hand.fsh','gbuffers_water.fsh','deferred.fsh','final.fsh','shadow.vsh','shadowcomp.csh','shadowcomp13.csh','shadowcomp14.csh','world-1/deferred.fsh','world1/deferred.fsh']
+selected=['gbuffers_terrain.vsh','gbuffers_hand.vsh','gbuffers_hand.fsh','gbuffers_water.fsh','deferred.fsh','final.fsh','shadow.vsh','shadowcomp.csh','shadowcomp12.csh','shadowcomp13.csh','shadowcomp14.csh','world-1/deferred.fsh','world1/deferred.fsh']
 rows=json.loads((HOST/'releases.json').read_text());results=[];compile_jobs={}
 for row in rows:
     jar=(args.iris_jars or T/'jars')/row['filename']

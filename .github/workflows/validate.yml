@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   validate:
-    name: GLSL, Iris parsers and distribution
+    name: GLSL, occlusion, Iris parsers and distribution
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -32,12 +32,18 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: Install GLSL compiler
-        run: sudo apt-get update && sudo apt-get install --yes glslang-tools
+      - name: Install GLSL compiler and software OpenGL
+        run: sudo apt-get update && sudo apt-get install --yes glslang-tools libglfw3 libgl1-mesa-dri xvfb xauth
+      - name: Install occlusion test dependencies
+        run: python -m pip install --requirement scripts/gpu-requirements.txt
       - name: Compile all profiles and dimensions
         run: python scripts/validate.py
       - name: Check the original Iris parsers
         run: python scripts/check_compatibility.py --glslang glslangValidator
+      - name: Execute voxel occlusion regression tests
+        env:
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: xvfb-run -a python scripts/test_voxel_occlusion.py
       - name: Build installable shader ZIP
         run: python scripts/build.py
       - name: Verify links, release files and checksums
@@ -51,6 +57,7 @@ jobs:
             dist/
             .validation/glsl/result.json
             .validation/iris/result.json
+            .validation/occlusion/result.json
           if-no-files-found: warn
           include-hidden-files: true
           retention-days: 7

@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 15,
-    "description": "LumenVale 2.5.0 | Faster voxel sampling | Iris capability fallback | Java 1.20.1"
+    "description": "LumenVale 2.6.0 | Occlusion-aware voxel light | Iris capability fallback | Java 1.20.1"
   }
 }
